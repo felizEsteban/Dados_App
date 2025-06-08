@@ -32,7 +32,6 @@ public class ThirdFragment extends Fragment {
             int val2 = random.nextInt(6) + 1;
             int val3 = random.nextInt(6) + 1;
 
-            // Mostrar de derecha a izquierda
             binding.dado3.setImageResource(getResources().getIdentifier("dice_" + val1, "drawable", requireContext().getPackageName()));
             binding.dado2.setImageResource(getResources().getIdentifier("dice_" + val2, "drawable", requireContext().getPackageName()));
             binding.dado1.setImageResource(getResources().getIdentifier("dice_" + val3, "drawable", requireContext().getPackageName()));

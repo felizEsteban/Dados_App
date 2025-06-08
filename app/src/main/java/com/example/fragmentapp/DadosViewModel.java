@@ -14,8 +14,4 @@ public class DadosViewModel extends ViewModel {
         actuales.add(valor);
         dadosLanzados.setValue(actuales);
     }
-
-    public void limpiarDados() {
-        dadosLanzados.setValue(new ArrayList<>());
-    }
 }

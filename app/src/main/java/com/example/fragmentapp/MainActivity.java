@@ -19,11 +19,17 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new FirstFragment()).commit();
+        if (savedInstanceState == null) {
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.fragment_container, new FirstFragment())
+                    .commit();
+        }
+
         binding.btnFirst.setOnClickListener(v -> showFragment(new FirstFragment()));
         binding.btnSecond.setOnClickListener(v -> showFragment(new SecondFragment()));
         binding.btnThrid.setOnClickListener(v -> showFragment(new ThirdFragment()));
     }
+
 
     private void showFragment(Fragment fragment){
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, fragment).addToBackStack(null).commit();

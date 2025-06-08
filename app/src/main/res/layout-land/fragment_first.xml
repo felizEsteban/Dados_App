@@ -27,7 +27,7 @@
         android:layout_width="242dp"
         android:layout_height="wrap_content"
         android:background="#3865EF"
-        android:text="220428"
+        android:text="Esteban Hdez C"
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold"

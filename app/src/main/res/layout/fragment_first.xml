@@ -15,7 +15,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#3865EF"
-        android:text="Desarrollo y Gestión de Software"
+        android:text="Esteban Hdez C"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
